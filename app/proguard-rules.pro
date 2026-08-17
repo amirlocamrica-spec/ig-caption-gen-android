@@ -1,0 +1,5 @@
+-keepattributes Signature
+-keep class com.igcaptiongenerator.data.model.** { *; }
+-keep class retrofit2.** { *; }
+-dontwarn okhttp3.**
+-dontwarn retrofit2.**
