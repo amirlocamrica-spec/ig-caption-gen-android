@@ -118,9 +118,7 @@ fun MainScreen(viewModel: CaptionViewModel = hiltViewModel()) {
                             Text(result.caption, style = MaterialTheme.typography.bodyLarge)
                             Text(result.hashtags.joinToString(" "), color = MaterialTheme.colorScheme.primary)
                             OutlinedButton(onClick = {
-                                clipboard.setText(AnnotatedString("${result.caption}
-
-${result.hashtags.joinToString(" ")}"))
+                                clipboard.setText(AnnotatedString("${result.caption}\n\n${result.hashtags.joinToString(" ")}"))
                             }) { Text("Copy to Clipboard") }
                         }
                     }
